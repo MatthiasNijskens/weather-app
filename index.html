@@ -9,7 +9,7 @@
 <body>
     <div class="app-wrap">
         <header>
-            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a location..."/>
+            <input type="text" autocomplete="off" onfocus="this.value=''" class="search-box" value="City , country code..."/>
         </header>
         <main>
             <section class="location">
@@ -18,10 +18,20 @@
             </section>
             <div class="current">
                 <div class="temp">25<span>°C</span></div>
+                <div>
+                    <img id="weathericon" src="sunny.png"> 
+                </div>
                 <div class="weather">Sunny</div>
                 <div class="hi-low">27°C / 12°C</div>
             </div>
         </main>
+        <hr>
+        <div class="weekly">
+            <h2>Forecast</h2>
+            <table id="weeklyForecast">
+                
+            </table>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
